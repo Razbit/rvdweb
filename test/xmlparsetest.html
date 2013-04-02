@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+function displXML()
+{
+	xmlhttp=new XMLHttpRequest();
+	xmlhttp.open("GET","note.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML; 
+	
+	document.write("<table border='1'>");
+	document.write("<p>Hi, its JS</p>");
+	//var x=xmlDoc.getElementsByTagName("CD");
+	for (i=0;i<xmlDoc.getElementsByTagName("CD").length;i++)
+	{ 
+		document.write("<tr><td>");
+		document.write(xmlDoc.getElementsByTagName("CD")[i].getElementsByTagName("ARTIST")[1].childNodes[1].nodeValue);
+		document.write("</td><td>");
+		document.write(xmlDoc.getElementsByTagName("CD")[i].getElementsByTagName("TITLE")[1].childNodes[1].nodeValue);
+		document.write("</td></tr>");
+	}
+	document.write("</table>");
+}
+
+</script>
+
+<body>
+
+<p>Hi!</p>
+
+<button type="button" onclick="displXML()">Display Date</button>
+
+</body>
+</html>

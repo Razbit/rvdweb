@@ -1,0 +1,152 @@
+/*STYLESHEET FOR RAZWEB*/
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: url('../images/background.png');
+	color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #B00000;
+	text-shadow: 0px 0px 8px #000;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+
+p, a {
+	color: #FFF;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+hr.h1line {
+	width: 400px;
+	margin-top: -10px;
+	position: relative;
+	float: left;
+	color: #FFF;
+}
+
+hr.headerline {
+	width: 400px;
+	margin-top: -10px;
+	position: relative;
+	float: left;
+	color: #FFF;
+}
+
+div.content {
+	position: relative;
+	float: left;
+	
+}
+
+div.content-wrapper {
+	position: relative;
+	margin-left: 188px;
+	margin-right: 172px;
+}
+
+#main {
+	padding-bottom: 64px;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -64px;
+}
+
+#address {
+	margin-bottom: 0px;
+}
+
+a.adrlink {
+	text-decoration: none;
+	color: #B00000;
+	text-shadow: 0px 0px 8px #000;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#title {
+	margin-top: 0px;
+}
+
+/*MENU*/
+
+div.menu {
+	margin-top: -16px;
+	padding-left: 6px;
+	position: relative;
+	float: left;
+	width: 172px;
+	min-height: 200px;
+}
+
+ul.menuitems, li.menuitem {
+	font-family: 'Ubuntu', sans-serif;
+	list-style-type: none;
+	padding-top: 4px;
+	padding-left: 6px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+li.menuitem {
+	border: 1px solid black;
+	background: url('../images/menubackground-ia.png');
+}
+
+li.menuitem:hover {
+	background: url('../images/menubackground-a.png');
+}
+
+li.submenuitem {
+	border: 1px solid black;
+	background: url('../images/menubackground-ia.png');
+	font-family: 'Ubuntu', sans-serif;
+	list-style-type: none;
+	padding-top: 3px;
+	padding-left: 24px;
+	padding-right: 4px;
+	padding-bottom: 3px;
+}
+
+li.submenuitem:hover {
+	background: url('../images/menubackground-a.png');
+}
+
+#curritem {
+	background: url('../images/menubackground-curr.png');
+}
+
+a.menuitem, a.submenuitem {
+	text-decoration: none;
+}
+
+a.submenuitem {
+	font-size: 14px;
+}
+
+/*FOOTER*/
+
+#footerdiv {
+	margin-top: -64px;
+	height: 48px;
+	clear: both;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+}
